@@ -10,10 +10,10 @@ export type SelectItemProps = Select.SelectItemProps & {
 const SelectItem = ({ text, ...props }: SelectItemProps) => {
   return (
     <Select.Item
-      className="flex justify-between items-center gap-2 px-3 py-2.5 outline-none data-[highlighted]:bg-zinc-50"
+      className="flex justify-between items-center gap-2 px-3 py-2.5 outline-none data-[highlighted]:bg-zinc-50 dark:data-[highlighted]:bg-zinc-700"
       {...props}
     >
-      <Select.ItemText className="text-black">
+      <Select.ItemText className="text-black dark:text-zinc-100">
         {text}
       </Select.ItemText>
 
